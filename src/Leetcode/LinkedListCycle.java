@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class LinkedListCycle {
     /*
      * Leetcode 141

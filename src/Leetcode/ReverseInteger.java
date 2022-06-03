@@ -1,3 +1,5 @@
+package Leetcode;
+
 class Solution {
     public int reverse(int x) {
         boolean isNegative = false;

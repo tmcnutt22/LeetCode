@@ -1,3 +1,5 @@
+package Grokking.slidingWindow;
+
 public class MaxSumSubarrayOfSizeK {
     public static void main(String[] args) {
         int[] input = new int[] {2, 1, 5, 1, 3, 2};

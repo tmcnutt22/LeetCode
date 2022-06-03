@@ -1,3 +1,5 @@
+package Leetcode;
+
 /*
 TODO: Understand this problem. Marked as leetcode easy but many approaches
 LEETCODE: 14

@@ -1,3 +1,5 @@
+package Grokking.slidingWindow;
+
 import java.util.Arrays;
 
 class AverageOfSubArrayOfSizeK {

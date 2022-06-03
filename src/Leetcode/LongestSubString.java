@@ -1,3 +1,5 @@
+package Leetcode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -74,7 +76,7 @@ O(1) memory
 
 
  */
-/*public class Solution {
+/*public class Leetcode.Solution {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length(), ans = 0;
         Map<Character, Integer> map = new HashMap<>(); // current index of character

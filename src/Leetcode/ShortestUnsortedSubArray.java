@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class ShortestUnsortedSubArray {
     public static void main(String[] args) {
         int[] intArray = new int[]{2,3,3,2,4};

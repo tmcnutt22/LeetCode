@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class Balance {
     public static void main(String[] args) {
         int[] intArray = new int[]{2, 4, 6, 3, 4};
