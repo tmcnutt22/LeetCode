@@ -1,4 +1,5 @@
 
+package Grokking.twoPointer;
 
 public class SortedSquares {
     public static void main(String[] args) {
