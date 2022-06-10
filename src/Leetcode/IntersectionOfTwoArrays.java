@@ -2,39 +2,38 @@ package Leetcode;/*
 Leetcode 349 12/31/2021
  */
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
-       int[] nums1 = new int[] {1,2,2,1};
-       int[] nums2 = new int[] {2,2};
+       int[] nums1 = new int[] {1,2,2,1, 3};
+       int[] nums2 = new int[] {2,2, 3};
 
-
+       System.out.println(Arrays.toString(intersection(nums1, nums2)));
 
     }
-    public int[] intersection(int[] nums1, int[] nums2) {
+    public static int[] intersection(int[] nums1, int[] nums2) {
         Set<Integer> setOne = new HashSet<>();
         for (int num : nums1) {
             setOne.add(num);
         }
 
-        Set <Integer> setTwo = new HashSet<>();
-        for (int num: nums2) {
-            setTwo.add(num);
-        }
-
-        ArrayList<Integer> returnList = new ArrayList<>();
-
-        for (int num : setOne) {
-            if (setTwo.contains(num)) {
-                returnList.add(num);
+        Set<Integer> retSet = new HashSet<>();
+        for (int num : nums2) {
+            if (setOne.contains(num)) {
+                retSet.add(num);
             }
         }
-        int[] returnArray = new int[returnList.size()];
-        for (int i = 0; i < returnArray.length; i++) {
-            returnArray[i] = returnList.get(i);
+        int[] returnArray = new int[retSet.size()];
+        int index = 0;
+        for (int s : retSet) {
+            if (retSet.contains(s)) {
+                returnArray[index++] = s;
+            }
         }
+
         return returnArray;
     }
 }
