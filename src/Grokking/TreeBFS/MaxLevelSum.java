@@ -26,7 +26,7 @@ public class MaxLevelSum {
         }
         int max = Integer.MIN_VALUE;
         for (Integer sum: listOfSums) {
-            Math.max(max, sum);
+            max = Math.max(max, sum);
         }
         return listOfSums.indexOf(max);
     }
