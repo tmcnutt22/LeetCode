@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Stack;
 
 import java.util.Stack;
 import java.util.HashMap;
@@ -8,7 +8,7 @@ class ValidParentheses {
     public static void main(String[] args) {
         String string = "{}{}()";
         String string2 = "({{(([[]]))}})";
-        System.out.println(isValid(string2));
+        System.out.println(isValid(string));
     }
 
 
@@ -23,20 +23,15 @@ class ValidParentheses {
             return false;
         }
 
-        //creates a chararray
-        char[] charArray = new char[s.length()];
-        for (int i = 0; i < s.length(); i++) {
-            charArray[i] = s.charAt(i);
-        }
-
         //iterates the charArray
-        for (int i = 0; i < charArray.length; i++) {
-            if (hashMap.containsKey(charArray[i]) && stack.isEmpty()) {
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (hashMap.containsKey(c) && stack.isEmpty()) {
                 return false;
-            } if (hashMap.containsKey(charArray[i]) && hashMap.get(charArray[i]) == stack.peek()) {
+            } if (hashMap.containsKey(c) && hashMap.get(c) == stack.peek()) {
                 stack.pop();
             } else {
-                stack.push(charArray[i]);
+                stack.push(c);
             }
         }
 
