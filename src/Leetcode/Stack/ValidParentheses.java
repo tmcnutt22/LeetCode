@@ -28,7 +28,8 @@ class ValidParentheses {
             char c = s.charAt(i);
             if (hashMap.containsKey(c) && stack.isEmpty()) {
                 return false;
-            } if (hashMap.containsKey(c) && hashMap.get(c) == stack.peek()) {
+            }
+            if (hashMap.containsKey(c) && hashMap.get(c) == stack.peek()) {
                 stack.pop();
             } else {
                 stack.push(c);
