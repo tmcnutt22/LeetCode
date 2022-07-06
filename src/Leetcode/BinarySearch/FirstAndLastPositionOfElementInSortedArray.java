@@ -23,12 +23,12 @@ public class FirstAndLastPositionOfElementInSortedArray {
                 int start = middle;
                 int end = middle;
 
-                while (start - 1 >= left && nums[start - 1] == target) {
+                while (start - 1 >= 0 && nums[start - 1] == target) {
                     start--;
                 }
                 retArray[0] = start;
 
-                while (end + 1 <= right && nums[end + 1] == target) {
+                while (end + 1 <= nums.length - 1 && nums[end + 1] == target) {
                     end++;
                 }
                 retArray[1] = end;
