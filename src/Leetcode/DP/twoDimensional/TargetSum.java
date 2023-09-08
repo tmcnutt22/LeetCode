@@ -26,7 +26,7 @@ public class TargetSum {
     }
 
     public static void main(String[] args) {
-        findTargetSumWays(new int[]{1,1,1,1,1}, 3);
+        findTargetSumWays(new int[]{1, 1, 1, 1, 1}, 3);
     }
 
     public static void print2dArray(int[][] arr) {
